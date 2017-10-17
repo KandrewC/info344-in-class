@@ -1,5 +1,8 @@
-#1/usr/bin/env bash
+
+#!/usr/bin/env bash
 set -e
+echo "building linux executable"
 GOOS=linux go build
-docker build -t andrewk7/testserver .
-docker push andrewk7/testserver
+docker build -t drstearns/testserver .
+docker push drstearns/testserver
+go clean

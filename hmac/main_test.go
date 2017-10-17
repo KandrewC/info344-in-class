@@ -7,6 +7,7 @@ func TestSign(t *testing.T) {
 	//use strings.NewReader() to get an io.Reader
 	//interface over a simple string
 	//https://golang.org/pkg/strings/#NewReader
+
 }
 
 func TestVerify(t *testing.T) {

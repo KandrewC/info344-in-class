@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
-GOOS=linux go build
-docker build -t andrewk7/zipsvr .
-docker push andrewk7/zipsvr
+
+echo "building go server for Linux..."
+#Linux users, execut: CGO_ENABLED=0 go build -a
+GOOS=linux go build 
+docker build -t drstearns/zipsvr .
+docker push drstearns/zipsvr
 go clean

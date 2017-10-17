@@ -19,6 +19,9 @@ npm-debug.log
 
 # MacOS files
 .DS_Store
+<<<<<<< HEAD
 
+=======
 #ignore TLS certs
+>>>>>>> completed
 tls
